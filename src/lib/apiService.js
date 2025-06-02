@@ -7,7 +7,7 @@ class ApiService {
 
       // En desarrollo, el archivo estará en /src/data/movies.json
       // Vite automáticamente sirve los archivos desde src como estáticos
-      const response = await fetch('/src/data/movies.json')
+      const response = await fetch('/data/movies.json')
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
